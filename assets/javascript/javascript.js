@@ -154,10 +154,10 @@ function viewHighscores() {
         }
     })
     resetState()
-
 }
 
 function returnBackButton() {
+    scoresContainerElement.innerHTML = "";
     startButton.classList.remove('hide')
     startingPageElement.classList.remove('hide')
     viewHighscoresElement.classList.add('hide')
@@ -166,6 +166,7 @@ function returnBackButton() {
     state.element.backButton.classList.add('hide')
     clearButton.classList.add('hide')
     timeText.classList.remove("hide");
+
     resetState()
 }
 
@@ -196,8 +197,8 @@ var scoreList = document.getElementById('scoresContainer')
 // var totalScores = JSON.parse(localStorage.getItem('totalScores')) || []
 
 subButton.onclick = function (e) {
-    alert("Score saved to continue please press view Highscores")
     e.preventDefault()
+    alert("Score saved to continue please press view Highscores")
     var initialsInput = document.getElementById("initials-Input").value
     var totalScores = localStorage.getItem('yourScores') || "";
 
