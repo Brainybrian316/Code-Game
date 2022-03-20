@@ -172,7 +172,7 @@ function returnBackButton() {
 
 
 // ! get scores function 
-// subButton.addEventListener('click', viewHighscores)
+
 
 function getInitialsPage() {
     startingPageElement.classList.add('hide')
